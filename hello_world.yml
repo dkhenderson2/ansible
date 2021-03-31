@@ -13,4 +13,4 @@
         
     - name: print url
       debug:
-        var: url
+        var: "{{ url }}"
