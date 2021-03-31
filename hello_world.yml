@@ -8,4 +8,4 @@
         
     - name: print url
       debug:
-        var: "{{ url }}"
+        msg: "{{ url }} is the url for the vip"
