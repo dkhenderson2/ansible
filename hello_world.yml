@@ -1,11 +1,6 @@
 - name: Hello World Sample
   hosts: all
-  vars_prompt:
-
-    - name: url
-      prompt: what is the requested url for this VIP?
-      private: no
-      
+  
   tasks:
     - name: Hello Message
       debug:
