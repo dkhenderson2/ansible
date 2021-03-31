@@ -8,5 +8,7 @@
     - name: url
       prompt: what is the requested url for this VIP?
       private: no
-      debug:
-        var: url
+      
+     - name: print url
+       debug:
+         var: url
