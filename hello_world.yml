@@ -9,7 +9,7 @@
   tasks:
     - name: Hello Message
       debug:
-        msg: "Hello World!
+        msg: "Hello World!"
         
     - name: print url
       debug:
