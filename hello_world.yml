@@ -4,3 +4,9 @@
     - name: Hello Message
       debug:
         msg: "Hello World!"
+        
+    - name: url
+      prompt: what is the requested url for this VIP?
+      private: no
+      debug:
+        var: url
