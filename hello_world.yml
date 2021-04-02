@@ -4,6 +4,8 @@
   gather_facts: no
   vars:
     provider:
+      user: "ckent"
+      password: "Doo729619"
       server: 10.10.0.12
       server_port: 443
       validate_certs: no
