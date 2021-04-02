@@ -1,11 +1,27 @@
 - name: Hello World Sample
   hosts: f5
-  
+  connection: local
+  gather_facts: no
+  vars:
+    provider:
+      server: 10.10.0.12
+      user: "{{ANSIBLE_NET_USERNAME}}"
+      password: "{{ANSIBLE_NET_PASSWORD}}"
+      server_port: 443
+      validate_certs: no
+      
   tasks:
     - name: Hello Message
       debug:
         msg: "Hello World!"
         
+    - name: COLLECT BIG-IP FACTS
+      bigip_device_info:
+        gather_subset:
+        - system-info
+        provider: "{{ provider }}"
+      register: device_facts
+      
     - name: print url
       debug:
         msg: "{{ url }} is the url for the vip"
