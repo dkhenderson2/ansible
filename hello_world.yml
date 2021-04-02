@@ -5,8 +5,6 @@
   vars:
     provider:
       server: 10.10.0.12
-      user: "{{ANSIBLE_NET_USERNAME}}"
-      password: "{{ANSIBLE_NET_PASSWORD}}"
       server_port: 443
       validate_certs: no
       
